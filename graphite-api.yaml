@@ -1,0 +1,15 @@
+finders:
+  - graphite_influxdb.InfluxdbFinder
+influxdb:
+   host: localhost
+   port: 8086
+   user: graphite
+   pass: graphite
+   db:   graphite
+   ssl: false
+   schema:
+     - ['high-res-metrics', 1]
+     - ['^collectd', 10]
+cache:
+   type: 'filesystem'
+   dir: '/tmp/graphite-api-cache'
