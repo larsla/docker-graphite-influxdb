@@ -1,5 +1,6 @@
 # Docker image for graphite-influxdb  
-Lets you use the Graphite API to query InfluxDB.
+Lets you use the Graphite API to query InfluxDB.  
+Based on https://github.com/vimeo/graphite-influxdb  
 
 # Build  
 docker build -t larsla/graphite-influxdb .  
